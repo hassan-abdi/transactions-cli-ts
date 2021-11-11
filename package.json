@@ -1,0 +1,45 @@
+{
+  "name": "transactions-cli-ts",
+  "version": "1.0.0",
+  "description": "A simple app for processing transactions.",
+  "main": "./build/cli.js",
+  "bin": {
+    "trxt": "./build/cli.ts",
+    "trx": "./build/cli.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "/assets",
+    "/build"
+  ],
+  "author": "Hassan Abdi<hassan.abdi@outlook.com> (sniptt.com)",
+  "license": "ISC",
+  "homepage": "https://github.com/s",
+  "scripts": {
+    "start": "node build/cli.js",
+    "create": "npm run build && npm run test",
+    "build": "tsc -p .",
+    "local": "sudo npm i -g && trx",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "axios-case-converter": "^0.9.0",
+    "dotenv": "^10.0.0",
+    "yargs": "^17.2.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.7",
+    "@types/yargs": "^17.0.5",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  },
+  "pkg": {
+    "scripts": "build/**/*.js"
+  }
+}
