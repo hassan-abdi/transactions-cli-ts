@@ -59,6 +59,8 @@ After execution, you should see report in the output stream:
     2013-12-21 -17.98
     2013-12-22 -110.71
 
+## API Documentation
+https://resttest.bench.co/
 
 ### Scalability
 In the aggregation process, on the first cycle, it tries to get the first page with just a single HTTP request. Once the aggregator receives the first page, it will automatically increase the number of concurrent HTTP requests for the subsequent cycles. Users are able to set a threshold for maximum concurrent HTTP requests.  
