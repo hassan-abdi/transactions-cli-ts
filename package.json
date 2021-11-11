@@ -21,7 +21,7 @@
     "start": "node build/cli.js",
     "create": "npm run build && npm run test",
     "build": "tsc -p .",
-    "local": "sudo npm i -g && trx",
+    "local": "sudo npm i -g",
     "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
     "test": "jest"
   },

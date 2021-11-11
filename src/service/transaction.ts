@@ -59,8 +59,6 @@ export class TransactionServiceRestApi implements TransactionService {
     }
 }
 
-
-
 export class DefaultTransactionSummaryReport implements TransactionSummaryReport {
 
     constructor(private service: TransactionService) {
